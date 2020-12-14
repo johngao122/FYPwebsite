@@ -3,4 +3,15 @@ AKIA2YSME6ADX7Q7MP64
 FueTZKbMpz0ekXjc3PZyCrFG4sAYGGyWYdITaQp1
 
 
-aws iot attach-principal-policy --policy-name 'androidappPolicy' --principal 'ap-southeast-1:ap-southeast-1_PfnL8TLF2' --region ap-southeast-1
+aws iot attach-principal-policy --policy-name 
+
+
+
+
+'androidappPolicy' --principal 'ap-southeast-1:ap-southeast-1_PfnL8TLF2' --region ap-southeast-1
+
+
+Access key id for aws
+AKIA2YSME6ADXW7VAFHV
+secret 
+KIrWn3oFN04CtB5CxsywdJXA4CddPsmqPzdHkRLg
