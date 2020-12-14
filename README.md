@@ -1,2 +1,0 @@
-# FYPwebsite
-website for fyp
