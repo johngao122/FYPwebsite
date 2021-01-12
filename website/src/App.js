@@ -1,41 +1,5 @@
 import logo from './logo.svg';
-import { LineChart, Line } from 'recharts';
 import './App.css';
-import Category from 'react-redux';
-import CategoryActions from 'react-redux'; // notice this will be your category actions file
-
-var AWS = require('aws-sdk')
-AWS.config.update({region: 'ap-southeast-1',
-endpoint:"http://localhost:3000"});
-
-var docClient = new AWS.DynamoDB.DocumentClient();
-var table = "SensorData";
-
-
-
-var params = {
-  RequestItems: {
-    'TABLE_NAME': {
-      Keys: [
-        {'KEY_NAME': {N: 'KEY_VALUE_1'}},
-        {'KEY_NAME': {N: 'KEY_VALUE_2'}},
-        {'KEY_NAME': {N: 'KEY_VALUE_3'}}
-      ],
-      ProjectionExpression: 'KEY_NAME, ATTRIBUTE'
-    }
-  }
-};
-
-ddb.batchGetItem(params, function(err, data) {
-  if (err) {
-    console.log("Error", err);
-  } else {
-    data.Responses.TABLE_NAME.forEach(function(element, index, array) {
-      console.log(element);
-    });
-  }
-});
-
 
 function App() {
   return (
@@ -55,7 +19,6 @@ function App() {
         </a>
       </header>
     </div>
-    
   );
 }
 
